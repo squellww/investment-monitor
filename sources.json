@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "name": "cls",
+      "url": "https://www.cls.cn/",
+      "type": "news",
+      "priority": 1,
+      "keywords": ["黄金", "人工智能", "游戏", "半导体", "新能源", "军工"]
+    },
+    {
+      "name": "eastmoney",
+      "url": "https://www.eastmoney.com/",
+      "type": "market",
+      "priority": 1,
+      "keywords": ["ETF", "板块", "涨跌"]
+    },
+    {
+      "name": "sina",
+      "url": "https://finance.sina.com.cn/",
+      "type": "news",
+      "priority": 2,
+      "keywords": ["政策", "央行", "证监会"]
+    },
+    {
+      "name": "36kr",
+      "url": "https://www.36kr.com/",
+      "type": "tech",
+      "priority": 2,
+      "keywords": ["AI", "人工智能", "机器人"]
+    }
+  ],
+  "search_keywords": {
+    "gold": ["黄金ETF", "国际金价", "美联储", "降息"],
+    "ai": ["人工智能", "AI政策", "机器人", "ChatGPT", "大模型"],
+    "gaming": ["游戏版号", "动漫", "游戏监管", "腾讯游戏"],
+    "semiconductor": ["半导体", "芯片", "国产替代", "晶圆"],
+    "nev": ["新能源汽车", "比亚迪", "华为汽车", "锂电池"],
+    "defense": ["军工", "国防预算", "地缘政治", "台海"],
+    "nantian": ["南天信息", "000948", "信创", "金融科技"]
+  }
+}

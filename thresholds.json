@@ -1,0 +1,46 @@
+{
+  "alert_levels": {
+    "critical": {
+      "name": "重要",
+      "emoji": "🔴",
+      "channels": ["feishu", "email"],
+      "triggers": {
+        "daily_change": {
+          "fund_threshold": 5.0,
+          "stock_threshold": 7.0
+        },
+        "policy": ["监管", "禁令", "补贴", "重大政策"],
+        "company": ["业绩", "重组", "违规", "ST", "退市"],
+        "macro": ["美联储", "央行降息", "战争", "冲突"],
+        "action_required": ["止损", "止盈", "调整定投"]
+      }
+    },
+    "warning": {
+      "name": "提醒",
+      "emoji": "🟡",
+      "channels": ["feishu"],
+      "triggers": {
+        "consecutive_days": 3,
+        "consecutive_change": 3.0,
+        "event_upcoming": ["发布会", "展会", "财报", "政策预期"],
+        "sip_reminder": {
+          "before_days": 1
+        }
+      }
+    },
+    "info": {
+      "name": "资讯",
+      "emoji": "🟢",
+      "channels": [],
+      "triggers": {
+        "general_news": true,
+        "market_summary": true
+      }
+    }
+  },
+  "silence_rules": {
+    "no_change_report": true,
+    "weekend_silence": true,
+    "holiday_silence": true
+  }
+}
