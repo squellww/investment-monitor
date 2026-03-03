@@ -38,6 +38,19 @@
       }
     }
   },
+  "trading_rules": {
+    "market_type": "A股",
+    "settlement": "T+1",
+    "trading_hours": {
+      "morning": "09:30-11:30",
+      "afternoon": "13:00-15:00"
+    },
+    "implications": {
+      "same_day_exit": false,
+      "stop_loss_delay": "次日执行",
+      "planning_required": true
+    }
+  },
   "silence_rules": {
     "no_change_report": true,
     "weekend_silence": true,
